@@ -1,10 +1,12 @@
+drop table if exists `commodity`;
 create table `commodity`(
-	`gid` int(11) not null,
-	`gname` varchar(50) not null,
-	`gpeice` float(16,2) not null,
-	primary key(`gid`)
+	`commodity_no` int not null auto_increment primary key,
+	`commodity_name` varchar(50) not null,
+	`commodity_price` double(16,2) not null
+
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+drop table if exists `student`
 CREATE TABLE `student` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(20) NOT NULL,
